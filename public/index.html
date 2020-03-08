@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Плеер</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://e-cdns-files.dzcdn.net/js/min/dz.js"></script>
+  </head>
+  <body>
+    <div id="container" class="container dataPleer">
+      <h1>Плеер Deezer</h1>
+      <form  action="" method="get">
+        <input id="inputSearchName" type="text" name="" value="" placeholder="Введите исполнителя">
+        <input id="inputSearchTrack" type="text" name="" value="" placeholder="Введите песню">
+        <button id="searchBtn" type="button" name="button">Search</button>
+        <button id="entrance" type="button" name="button">Добавить песню</button>
+      </form>
+    </div>
+    <div id="picture"></div>
+    <div id="dz-root"></div>
+
+    <div id="form_login" class="form_login">
+      <input type="text" name="name" value="" placeholder="Введите имя" required>
+      <input type="password" name="password" value="" placeholder="Введите пароль" required>
+      <button id="entrancePleer" type="button" name="button">Войти</button>
+    </div>
+
+    <div id="addPleer" class="addPleer">
+      <input type="file" id="fileElem" multiple accept="audio/*" onchange="handleFiles(files)">
+     <!-- <input type="file" id="fileElem" multiple accept="audio/*"> -->
+      <label id="addFile" class="button" for="fileElem">+</label>
+       <audio id="audioPleer" autoplay controls></audio>
+      <progress id="progress-bar" max=100 value=0></progress>
+    </div>
+
+  </body>
+</html>
